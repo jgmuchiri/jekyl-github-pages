@@ -1,4 +1,4 @@
-# Jekyl-Github Pages blog starter template
+# git Jekyll-Github Pages blog starter template
 
 A starter template to help you publish your blog to Github pages.
 
