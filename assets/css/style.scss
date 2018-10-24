@@ -1,0 +1,410 @@
+//
+// IMPORTS
+//
+
+@import "reset";
+@import "variables";
+// Syntax highlighting @import is at the bottom of this file
+
+/**************/
+/* BASE RULES */
+/**************/
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #fff;
+  font: 18px/1.4 Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  font-weight: bold;
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+}
+@media screen and (max-width: 640px) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+  }
+}
+
+h1 {
+  font-size: 30px;
+}
+h1 a {
+  color: inherit;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  color: #666;
+}
+
+p {
+  margin: 15px 0;
+}
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover, a:active {
+  color: #4183C4;
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+.gmnoprint img {
+  max-width: none;
+}
+
+.date {
+  font-style: italic;
+  color: #666;
+}
+
+::-moz-selection {
+  color: #000;
+  background: #eee;
+}
+
+::selection {
+  color: #000;
+  background: #eee;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+.wrapper-masthead {
+  margin-bottom: 50px;
+}
+
+.masthead {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+@media screen and (max-width: 640px) {
+  .masthead {
+    text-align: center;
+  }
+}
+
+.site-avatar {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 640px) {
+  .site-avatar {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.site-avatar img {
+  border-radius: 5px;
+}
+
+.site-info {
+  float: left;
+}
+@media screen and (max-width: 640px) {
+  .site-info {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: #333;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: #666;
+  font-size: 16px;
+}
+@media screen and (max-width: 640px) {
+  .site-description {
+    margin: 3px 0;
+  }
+}
+
+nav {
+  float: right;
+  margin-top: 23px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+@media screen and (max-width: 640px) {
+  nav {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+}
+nav a {
+  margin-left: 20px;
+  color: #333;
+  text-align: right;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 640px) {
+  nav a {
+    margin: 0 10px;
+    color: #4183C4;
+  }
+}
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eee;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post blockquote {
+  margin: 1.8em .8em;
+  border-left: 2px solid #666;
+  padding: 0.1em 1em;
+  color: #666;
+  font-size: 22px;
+  font-style: italic;
+}
+.post .comments {
+  margin-top: 10px;
+}
+.post .read-more {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.row {
+  background: #fff;
+  height: 100%;
+}
+
+.description {
+  color: #868686;
+}
+
+.separator {
+  margin: 0 auto;
+  background: url(images/separator.png);
+  height: 9px;
+  width: 100%;
+  background-repeat: no-repeat;
+  clear: both;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.skills{
+  display:block;
+  font-size:12px;
+  position:relative;
+  clear:both;
+}
+.skills li{
+  background:#ff906c;
+  color:#fff;
+  float:left;
+  padding:2px;
+  margin-right:5px;
+  border-radius:5px;
+}
+#projects{
+  display: block;
+  margin-bottom:25px;
+}
+#projects ol, #projects ul {
+  list-style: none;
+}
+
+#projects p {
+  /* margin: 15px 0; */
+  /* line-height: 26px; */
+  font-size: 14px;
+  /* padding-top: 25px; */
+  /* padding-bottom: 25px; */
+}
+
+.span4 {
+  width: 32%;
+  float: left;
+  position: relative;
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  margin-bottom: -70px;
+}
+
+.portfolio-col, .span4, .span8 {
+  display: inline-block;
+}
+
+.span8 {
+  width: 65%;
+}
+
+.span12 {
+  width: 100%;
+}
+
+.portfolio-col:last-of-type {
+  padding: 0 50px;
+}
+
+.portfolio-col, .span4, .span8 {
+  display: inline-block;
+}
+
+.portfolio-item .portfolio-col:first-of-type {
+  float: left;
+}
+
+.portfolio-item img {
+  width: 100%;
+}
+
+.btn {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 18px 26px;
+  border-radius: 3px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+@media (max-width: 1072px) {
+  .portfolio-col {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 0 !important;
+  }
+
+  .portfolio-item {
+    padding: 45px 21px 66px;
+  }
+
+  .portfolio-item img {
+    margin-bottom: 20px;
+    width: 65%;
+  }
+}
+@media (max-width: 480px) {
+  .portfolio-col, .portfolio-col img, .span8 {
+    width: 100%;
+  }
+
+  .portfolio-col:last-of-type {
+    padding: 0;
+  }
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";
+
+.mauticform-errormsg{
+  display: block;
+  color: red;
+  margin-top: 2px;
+}
+.mauticform_personalsitemailinglist_message{
+  color: #217321;
+  background: #84f584;
+  border: solid 1px #83c55f;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
